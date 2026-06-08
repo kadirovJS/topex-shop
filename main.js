@@ -3,7 +3,7 @@ let form = document.getElementById("form");
 let postBtn =document.getElementById("post")
 let load  = document.getElementById("load")
 
-let api = "https://diary-procreate-coauthor.ngrok-free.dev/products"
+let api = "https://topex-shop-bec.onrender.com/products"
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -26,7 +26,7 @@ con.addEventListener("click" , ( e ) => {
 
 function deleteProduct(productId){
   
-  fetch(`https://diary-procreate-coauthor.ngrok-free.dev/products/${productId}` , 
+  fetch(`${api}/${productId}` , 
     {
       method:"DELETE",
       headers:{
